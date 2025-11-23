@@ -1,0 +1,924 @@
+ERROR - 2025-11-22 04:29:53 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-22 04:29:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\LoginController->login()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-22 04:29:55 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-22 04:29:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\LoginController->login()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-22 04:30:01 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-22 04:30:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\LoginController->login()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-22 04:30:02 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-22 04:30:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\LoginController->login()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-22 04:30:02 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-22 04:30:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\LoginController->login()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-22 04:30:03 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-22 04:30:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\LoginController->login()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-22 04:30:03 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-22 04:30:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\LoginController->login()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-22 04:30:04 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-22 04:30:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\LoginController->login()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-22 04:30:04 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-22 04:30:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\LoginController->login()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-22 04:30:05 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-22 04:30:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\LoginController->login()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-22 04:30:05 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-22 04:30:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\LoginController->login()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-22 04:30:05 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-22 04:30:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\LoginController->login()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-22 04:30:06 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-22 04:30:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\LoginController->login()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-22 04:30:06 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-22 04:30:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\LoginController->login()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-22 04:30:06 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-22 04:30:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\LoginController->login()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-22 04:30:06 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-22 04:30:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\LoginController->login()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-22 04:30:07 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-22 04:30:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\LoginController->login()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-22 04:30:07 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\LoginController->login()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-22 04:30:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LoginController.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\LoginController->login()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+CRITICAL - 2025-11-22 18:15:41 --> Error: Call to a member function setStatusCode() on null
+[Method: POST, Route: produk]
+in APPPATH/Controllers/BaseController.php on line 69.
+ 1 APPPATH/Filters/AuthFilter.php(35): App\Controllers\BaseController->failResponse()
+ 2 SYSTEMPATH/Filters/Filters.php(241): App\Filters\AuthFilter->before()
+ 3 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore()
+ 4 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+CRITICAL - 2025-11-22 18:20:04 --> Error: Call to a member function setStatusCode() on null
+[Method: DELETE, Route: produk/5]
+in APPPATH/Controllers/BaseController.php on line 69.
+ 1 APPPATH/Filters/AuthFilter.php(35): App\Controllers\BaseController->failResponse()
+ 2 SYSTEMPATH/Filters/Filters.php(241): App\Filters\AuthFilter->before()
+ 3 SYSTEMPATH/Filters/Filters.php(221): CodeIgniter\Filters\Filters->runBefore()
+ 4 SYSTEMPATH/CodeIgniter.php(479): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')

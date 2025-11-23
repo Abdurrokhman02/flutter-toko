@@ -1,0 +1,450 @@
+ERROR - 2025-11-20 10:37:49 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-20 10:37:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-20 11:03:32 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-20 11:03:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-20 11:03:37 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-20 11:03:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-20 11:08:08 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-20 11:08:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-20 11:17:23 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-20 11:17:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-20 11:17:25 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-20 11:17:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-20 11:17:28 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-20 11:17:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-20 11:17:29 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-20 11:17:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
+ERROR - 2025-11-20 11:17:30 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 /mnt/shared/backend_modul5/app/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /mnt/shared/backend_modul5/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /mnt/shared/backend_modul5/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /mnt/shared/backend_modul5/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /mnt/shared/backend_modul5/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /mnt/shared/backend_modul5/system/BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 /mnt/shared/backend_modul5/app/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+#6 /mnt/shared/backend_modul5/system/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+#7 /mnt/shared/backend_modul5/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/shared/backend_modul5/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/shared/backend_modul5/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /mnt/shared/backend_modul5/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /mnt/shared/backend_modul5/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /mnt/shared/backend_modul5/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-11-20 11:17:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: registrasi]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/RegistrasiController.php(33): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\RegistrasiController->create()
+ 7 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/mnt/shared/backend_modul5/public/index.php')
